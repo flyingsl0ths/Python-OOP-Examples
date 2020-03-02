@@ -1,6 +1,7 @@
 # Python Object-Oriented Programming: classmethods and staticmethods
 import datetime
 
+
 class Employee(object):
     # self is the first argument a class always takes
     # self refers to the instance of said object
@@ -17,7 +18,7 @@ class Employee(object):
         # The initialiser method/ contructor, __init__ for short
         # is the blueprint for what variables/fields every instance
         # of said object must be passed to it before it can be created
-        # this is alot more efficient than doing it manually 
+        # this is alot more efficient than doing it manually
         # as noted below
         self.first_name = first_name
         self.last_name = last_name
@@ -30,7 +31,7 @@ class Employee(object):
         # in order to know which object to operate on, they
         # can be accessed without self as well
         return "{} {}".format(self.first_name, self.last_name)
-    
+
     def ApplyRaise(self):
         self.pay = int(self.pay * self.raise_amount)
         # self.pay = int(self.pay * self.raise_amount)
@@ -62,27 +63,25 @@ class Employee(object):
         return True
 
 
-
 emp_1 = Employee("Flying", "Sloths", 50000, "someemail123@somewhere.com")
 emp_2 = Employee("Test", "User", 50000, "testemail321@somewhere.com")
 
 ## Using Class Methods ##
 # set_raise_amount takes the class as an argument
-# due to it being a classmethod (made possible using the 
+# due to it being a classmethod (made possible using the
 # @classmethod decorator) this is similar to instance methods taking self
 # as their first argument
-#
+
 # Same as Employee.raise_amount = 1.05
 # Instances can also use class methods as well
 # emp_1.set_raise_amount(1.05)
 # Employee.set_raise_amount(1.05)
-#
+
 # print(Employee.raise_amount)
 # print(emp_1.raise_amount)
 # print(emp_2.raise_amount)
-#
+
 # Class Methods can also be used as constructors
-#
 # emp_str_3 = 'Jane-Doe-90000-testemail2153@email.com'
 # emp_3 = Employee.from_string(emp_str_3)
 # print(emp_3.FullName())
@@ -92,8 +91,6 @@ emp_2 = Employee("Test", "User", 50000, "testemail321@somewhere.com")
 ## Static Methods ##
 # A static method is defined as a method that does not access
 # the class/instance
-#
 # my_date = datetime.date(2020, 2, 28)
-#
 # print(Employee.is_workday(my_date))
 ####################

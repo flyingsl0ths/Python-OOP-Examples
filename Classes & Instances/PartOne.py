@@ -1,5 +1,6 @@
 # Python Object-Oriented Programming: Creating/Instanciating A Class
 
+
 class Employee(object):
     # self is the first argument a class always takes
     # self refers to the instance of said object
@@ -20,7 +21,7 @@ class Employee(object):
         # in order to know which object to operate on, they
         # can be accessed without self as well
         return "{} {}".format(self.first_name, self.last_name)
-        
+
 
 #### Manually Assignning Fields To An Object ###
 # emp_1.first_name = "Flying"
