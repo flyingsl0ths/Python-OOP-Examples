@@ -1,3 +1,5 @@
+# Python Object-Oriented Programming: Inheritance
+
 class Employee(object):
     # self is the first argument a class always takes
     # self refers to the instance of said object
