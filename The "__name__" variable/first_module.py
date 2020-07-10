@@ -1,10 +1,10 @@
-# Whenever the Python interpreter runs file
+# Whenever the Python interpreter runs a file
 # a series of variables are set, __name__ being
 # one of them is set to "__main__"
 
-# When an import statement is used within a file
+# Whenever another file imports this module
 # __name__ is set to the name of the file the reason
-# for this being that the file is no longer being ran
+# for this is, that this file is no longer being ran
 # directly by python but the file containing the import statement
 
 # Tldr __name__ == "__main__" is used to determine
