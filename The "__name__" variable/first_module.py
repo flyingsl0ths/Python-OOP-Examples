@@ -1,9 +1,9 @@
-# Whenever the Python interpreter runs a file
+# Whenever the Python interpreter runs a file directly
 # a series of variables are set, __name__ being
 # one of them is set to "__main__"
 
 # Whenever another file imports this module
-# __name__ is set to the name of the file the reason
+# __name__ is set to the name of this file the reason
 # for this is, that this file is no longer being ran
 # directly by python but the file containing the import statement
 
